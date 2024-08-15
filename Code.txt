@@ -1,0 +1,19 @@
+notificationSound = Instance.new'Sound'
+notificationSound.SoundId = 'rbxassetid://6897623656'
+notificationSound.Volume = 1
+notificationSound.Parent = game.Players.LocalPlayer.PlayerGui
+https = 'https://raw.githubusercontent.com/mstudio45/LinoriaLib/main/'
+linorialibrary = loadstring(game:HttpGet(https.. 'Library.lua'))()
+function Notify(Text, Duration)
+linorialibrary:Notify(Text, Duration) then notificationSound:Play()
+end
+Notify("[ BYPASS ] : Hello , Kid >=D (Nah, I'd Win.)")
+players = game.Players
+localplayer = players.LocalPlayer
+character = localplayer.Character
+collision = character:WaitForChild("Collision", 3)
+collision.CustomPhysicalProperties = PhysicalProperties.new(100, 0, 0, 0, 0)
+collision:FindFirstChild'CollisionCrouch'.CustomPhysicalProperties = PhysicalProperties.new(100, 0, 0, 0, 0)
+collision:FindFirstChild'CollisionCrouch'.Massless = Flags["Speed"].Value
+collision.Massless = not collision.Massless
+                        
